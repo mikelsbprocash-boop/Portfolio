@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meu Portfólio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f8f9fb;
+  --text:#222;
+  --accent:#0077ff;
+  --radius:12px;
+  --max:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Poppins",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background:#fff;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+  position:sticky;top:0;z-index:10;
+}
+header h1{margin:0;font-size:1.4rem;color:var(--accent);}
+nav a{
+  margin-left:1.2rem;
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+}
+nav a:hover{color:var(--accent);}
+
+/* Hero */
+.hero{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  max-width:var(--max);
+  margin:auto;
+  padding:4rem 2rem;
+  gap:2rem;
+}
+.hero img{
+  width:320px;
+  border-radius:var(--radius);
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+.hero-text{flex:1 1 320px;}
+.hero-text h2{font-size:2.2rem;margin-bottom:.5rem;}
+.hero-text p{max-width:45ch;margin-bottom:1rem;}
+.hero-text a{
+  display:inline-block;
+  padding:.7rem 1.4rem;
+  background:var(--accent);
+  color:#fff;
+  border-radius:var(--radius);
+  text-decoration:none;
+}
+.hero-text a:hover{opacity:.9}
+
+/* Projetos */
+section{
+  max-width:var(--max);
+  margin:4rem auto;
+  padding:0 2rem;
+}
+section h2{text-align:center;margin-bottom:2rem;}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.5rem;
+}
+.proj{
+  background:#fff;
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:0 4px 16px rgba(0,0,0,.05);
+  transition:transform .25s;
+}
+.proj:hover{transform:translateY(-4px);}
+.proj img{width:100%;display:block;}
+.proj .info{padding:1rem;}
+.proj .info h3{margin-top:0;margin-bottom:.3rem;}
+.proj .info p{font-size:.9rem;color:#555;}
+
+/* Sobre */
+.about{
+  text-align:center;
+  background:#fff;
+  border-radius:var(--radius);
+  padding:2rem;
+  box-shadow:0 4px 16px rgba(0,0,0,.05);
+}
+
+/* Contato */
+footer{
+  text-align:center;
+  padding:2rem;
+  font-size:.9rem;
+  color:#666;
+}
+footer a{color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;}
+footer a svg{width:18px;height:18px;display:inline-block;vertical-align:middle;}
+footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Miguel F Santos</h1>
+  <nav>
+    <a href="#projetos">Projetos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Olá, eu sou Miguel Freitas dos Santos</h2>
+    <p>Desenvolvedor front-end / designer / criador de interfaces limpas e eficientes.Trabalho com python e sua biblioteca Django, nesse sentido, Full stack. Aqui estão alguns dos meus trabalhos e projetos recentes.</p>
+    <a href="#projetos">Ver Portfólio</a>
+  </div>
+  <img src="1000032117.jpg" alt="Foto de perfil">
+</section>
+
+<section id="projetos">
+  <h2>Projetos Recentes</h2>
+  <div class="grid">
+    <div class="proj">
+      <img src="19198954.jpg" alt="">
+      <div class="info">
+        <h3>Projeto 1</h3>
+        <p>Descrição curta do projeto ou tecnologia usada.</p>
+      </div>
+    </div>
+    <div class="proj">
+      <img src="Wavy_Bus-04_Single-04.jpg" alt="">
+      <div class="info">
+        <h3>Projeto 2</h3>
+        <p>Descrição curta do projeto ou tecnologia usada.</p>
+      </div>
+    </div>
+    <div class="proj">
+      <img src="Wavy_Bus-20_Single-04.jpg" alt="">
+      <div class="info">
+        <h3>Projeto 3</h3>
+        <p>Descrição curta do projeto ou tecnologia usada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <h2>Sobre mim</h2>
+  <div class="about">
+    <p>Sou um profissional apaixonado por tecnologia e design. Tenho experiência em Python,Django,HTML, CSS, JavaScript e frameworks modernos. Busco sempre criar experiências agradáveis e funcionais.</p>
+  </div>
+</section>
+
+<footer id="contato">
+  <p>© 2025 Miguel F Santos — <a href="mailto:voce@email.com">mikelsbprocash@gmail.com</a> —
+    <a href="https://www.instagram.com/mkzin.py?igsh=MWo2YzRmdTltdWRlcQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Miguel F Santos">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+        <circle cx="12" cy="12" r="3"></circle>
+        <circle cx="17.5" cy="6.5" r="0.5"></circle>
+      </svg>
+      <span>Instagram</span>
+    </a>
+    —
+    <a href="https://github.com/mikelsbprocash-boop" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Miguel F Santos">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false" width="18" height="18" fill="currentColor">
+        <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.37-1.3-1.74-1.3-1.74-1.06-.72.08-.7.08-.7 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 2.92-.39c.99 0 1.98.13 2.92.39 2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.42-2.68 5.39-5.24 5.67.42.36.8 1.07.8 2.15 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+      </svg>
+      <span>GitHub</span>
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
